@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="container-fluid" >
-        <div class="row fluid" style="background-color: #06174b;">
+        <div class="row align-items-center" style="background-color: #06174b;">
             <div class="col-2">
                 <a href="inicio"><img src="imagenes/logo1.jpg" alt="Logo" class="logo"></a>
             </div>
@@ -32,18 +32,18 @@
             </nav>
         </div>
     </header>
-    <footer>
-        <div class="row fluid" id="footer">
+    {% block content%}
+    {% endblock%}
+    <footer class="container-fluid">
+        <div class="row align-items-center" id="footer">
             <div class="col-8">
                 <img src="imagenes/agente.jpg" alt="" id="call">
                 <p>Línea Nacional: 01 8000 37 94</p>
             </div>
-            <div class="col 4" style="margin-top: 3%;">
-                <a href="#"><img src="imagenes/facebook.jpg" alt="" class="redes"></a>
-                <a href="#"><img src="imagenes/instagram.jpg" alt="" class="redes"></a>
-                <a href="#"><img src="imagenes/twitter.jpg" alt="" class="redes"></a>
-                
-                
+            <div class="col-4">
+                <img src="imagenes/facebook.jpg" alt="facebook" class="redes">
+                <img src="imagenes/instagram.jpg" alt="instagram" class="redes">
+                <img src="imagenes/twitter.jpg" alt="twitter" class="redes">
             </div>
         </div>
     </footer>
